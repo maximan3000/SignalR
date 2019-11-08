@@ -13,6 +13,7 @@ namespace SignalRChat.Rss
 {
     public class HookRss : IHookRss
     {
+        public static string url = "https://news.google.com/news/rss/headlines/section/topic/WORLD?ned=us&hl=en";
         public readonly int newsBufferSize;
         public TimeSpan updateInterval = new TimeSpan(0, 0, 10);
 
@@ -81,7 +82,7 @@ namespace SignalRChat.Rss
 
         private void HookFeeds()
         {
-            string url = "https://news.google.com/news/rss/headlines/section/topic/WORLD?ned=us&hl=en";
+            
             SyndicationFeed feed;
             using (XmlReader reader = XmlReader.Create(url))
             {

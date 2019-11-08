@@ -105,7 +105,6 @@
   <ItemGroup>
     <Compile Include="ChatHub.cs" />
     <Compile Include="ClientInfo.cs" />
-    <Compile Include="IChatHubClient.cs" />
     <Compile Include="Rss\HookRss.cs" />
     <Compile Include="Rss\IHookRss.cs" />
     <Compile Include="Rss\News.cs" />
